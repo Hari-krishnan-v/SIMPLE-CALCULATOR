@@ -1,9 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 30px;
 }
 body{
     justify-content: center;
-    background-color: rgb(0, 0, 0)
+    background-color: rgb(26, 30, 37)
     
 }
 
@@ -12,13 +19,38 @@ body{
     justify-content: center;
     max-width: 450px;
     margin-top: 200px;
-    background-color: rgb(44, 30, 18);
+    background-color: #000000;
+    /* animation: clr 5s infinite; */
     border-radius: 25px;
     padding: 10px;
     gap: 20px;
+    box-shadow: 0px 10px 20px 2px rgb(219, 122, 12);
+    transition: all .5s;
 }
+
+.container:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(219, 122, 12);
+}
+@keyframes clr {
+    0% {
+    background-color: rgb(7, 97, 119);
+        
+    }
+    50%{
+    background-color: rgb(136, 189, 14);
+
+    }
+    100%{
+    background-color: rgb(131, 29, 3);
+
+    }
+}
+
+
 .inp{
-    width: 100%;
+
+    
     margin: 0px 10px 10px 0px ;
 }
 input{
@@ -30,8 +62,8 @@ input{
     margin-right: 10px;
     border-radius: 25px;
     color: rgb(255, 255, 255);
-    border: 2px solid rgb(230, 230, 230);
-    background-color: #ffffff2f;
+    border: 2px solid rgb(219, 122, 12);
+    background-color: #f3f1f12f;
 }
 
 .cal{
@@ -39,28 +71,42 @@ input{
     margin-left: 10px;
 }
 .btn{
-    border: 2px solid black;
+    border: none;
     width: 100px;
     height: 100px;
+    color: #fff;
     margin-bottom: 5px;
-    border-radius: 50%;
+    border-radius: 26px;
+    background-color:#424040;
+    transition: all .3s ease-in-out;
+
+}
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgb(219, 122, 12);
 }
 .c{
-    width: 205px;
+    /* width: 205px; */
     border-radius: 25px;
     color: #fff;
     height: 100px;
-    background-color: rgb(85, 84, 84);
+    background-color: rgb(219, 122, 12);
+    
 }
 .sl{
     width: 100px;
+    font-weight: 400;
     border-radius: 25px;
-    color: #fff;
+    color: rgb(219, 122, 12);
     height: 100px;
-    background-color:rgb(85, 84, 84);
+    background-color:#141414;
+}
+.bk{
+    width: 25px;
+  
 }
 .eq{
-    width: 300px;
+    width: 200px;
     height: 90px;
     border-radius: 25px;
 
