@@ -15,30 +15,31 @@
             <input type="text" id="display" >
         </div>
         <div class="cal">
-            <button onclick="clearDisplay()" class="btn sl">c</button>
-            <button onclick="back()" class="btn sl "><img src="assets/download.svg" alt="" class="bk"> </button>
+            <audio id="ad" src="/assets/click-21156.mp3"></audio>
+            <button onclick="clearDisplay(), document.getElementById('ad').play();" class="btn sl">c</button>
+            <button onclick="back(),document.getElementById('ad').play();" class="btn sl "><img src="assets/download.svg" alt="" class="bk"> </button>
 
-            <button onclick="appendDisplay('/')" class="btn sl">/</button>
-            <button onclick="appendDisplay('*')" class="btn sl">x</button>
-            <button onclick="appendDisplay(7)" class="btn">7</button>
-            <button onclick="appendDisplay(8)" class="btn">8</button>
-            <button onclick="appendDisplay(9)" class="btn">9</button>
-            <button onclick="appendDisplay('-')" class="btn sl">-</button>
+            <button onclick="appendDisplay('/'),document.getElementById('ad').play();" class="btn sl">/</button>
+            <button onclick="appendDisplay('*'),document.getElementById('ad').play();" class="btn sl">x</button>
+            <button onclick="appendDisplay(7),document.getElementById('ad').play();" class="btn">7</button>
+            <button onclick="appendDisplay(8),document.getElementById('ad').play();" class="btn">8</button>
+            <button onclick="appendDisplay(9),document.getElementById('ad').play();" class="btn">9</button>
+            <button onclick="appendDisplay('-'),document.getElementById('ad').play();" class="btn sl">-</button>
 
-            <button onclick="appendDisplay(4)" class="btn ">4</button>
-            <button onclick="appendDisplay(5)" class="btn">5</button>
-            <button onclick="appendDisplay(6)" class="btn">6</button>
-            <button onclick="appendDisplay('+')" class="btn sl">+</button>
+            <button onclick="appendDisplay(4),document.getElementById('ad').play();" class="btn ">4</button>
+            <button onclick="appendDisplay(5),document.getElementById('ad').play();" class="btn">5</button>
+            <button onclick="appendDisplay(6),document.getElementById('ad').play();" class="btn">6</button>
+            <button onclick="appendDisplay('+'),document.getElementById('ad').play();" class="btn sl">+</button>
 
-            <button onclick="appendDisplay(1)" class="btn ">1</button>
-            <button onclick="appendDisplay(2)" class="btn">2</button>
-            <button onclick="appendDisplay(3)" class="btn">3</button>
-            <button onclick="appendDisplay('.')" class="btn sl">.</button>
+            <button onclick="appendDisplay(1),document.getElementById('ad').play();" class="btn ">1</button>
+            <button onclick="appendDisplay(2),document.getElementById('ad').play();" class="btn">2</button>
+            <button onclick="appendDisplay(3),document.getElementById('ad').play();" class="btn">3</button>
+            <button onclick="appendDisplay('.'),document.getElementById('ad').play();" class="btn sl">.</button>
             <br>
-            <button onclick="appendDisplay(0)" class="btn">0</button>
-            <button onclick="appendDisplay('00')" class="btn">00</button>
+            <button onclick="appendDisplay(0),document.getElementById('ad').play();" class="btn">0</button>
+            <button onclick="appendDisplay('00'),document.getElementById('ad').play();" class="btn">00</button>
 
-            <button onclick="calculate()" class="btn eq">=</button>
+            <button onclick="calculate(),document.getElementById('ad').play();" class="btn eq">=</button>
 
         </div>
     </div>
